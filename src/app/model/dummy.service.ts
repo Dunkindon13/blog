@@ -104,4 +104,8 @@ export class DummyService {
   getAllPosts(): Observable<Post[]> {
     return of(this.posts);
   }
+
+  getPostById(id): Observable<Post> {
+    return of(this.posts[id]);
+  }
 }
