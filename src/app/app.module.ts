@@ -10,6 +10,9 @@ import { NotFoundComponent } from './view/main/not-found/not-found.component';
 import { StubPipe } from './controller/pipes/stub.pipe';
 import { CardModule } from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import {MenubarModule} from 'primeng/menubar';
+import {ToggleButtonModule} from 'primeng/togglebutton';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,12 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    MenubarModule,
+    ToggleButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
